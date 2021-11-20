@@ -52,9 +52,6 @@ The file structure is the following
 +-- modelling
 |   +-- [ML]fake-news-classification.ipynb
 |   +-- train.ipynb
-+-- demo
-|   +-- app.py
-|   +-- svm_model.pkl
 ```
 
 ### Install requirements
@@ -67,12 +64,6 @@ $ pip install -r requirements.txt
 ```{r, engine='bash', count_lines}
 $ runipy train.ipynb
 ```
-### For Demo Only
-
-```{r, engine='bash', count_lines}
-$ streamlit run app.py
-```
-![Demo](Image/Demo.gif)
 
 ### Confusion matrices of different classifiers
 
@@ -106,11 +97,17 @@ $ streamlit run app.py
 | Linear SVM                | 99.65%       |
 | SVM with RBF kernel       | 99.52%       |
 
-- Decision Tree classifier seems to be the best fit on the dataset. So we shall use decision tree classifier on streamlit. 
-
 ### References
 
   * [Fake News Identification - Stanford CS229](http://cs229.stanford.edu/proj2017/final-reports/5244348.pdf)
   * [Machine Learning for Detection of Fake News](https://dspace.mit.edu/bitstream/handle/1721.1/119727/1078649610-MIT.pdf)
   * [Fake News Classification](https://github.com/SauravMaheshkar/Fake-News-Classification)
   * [Datasets from Kaggle](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)
+
+### Conclusion
+
+- I incresed accuracy as well as f1-scores than the paper original dataset mentioned in the acknowledgement.
+- Data preprocessing and TFIDF make machine learning classifiers more precise.
+- Decision Tree Classifier would be the best fit on the dataset.
+- This repository is for Udacity Machine Learning Engineer Nanodegree and only to use educational purpose.
+- For the demonstration : [Fake News Classifiers by Aly Boolani](https://github.com/AlyBoolani/Fake-News-Classifier) on the same dataset I used. ( We used different preprocessing approaches )
