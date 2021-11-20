@@ -85,7 +85,6 @@ $ runipy train.ipynb
 - Confusion matrix of SVM with RBF kernel
 ![RBF Confusion matrix Images](Image/rbf.png)
 
-
 ### Comparing Accuracies of Machine Learning Models
 
 | Model                     | Accuracy     |
@@ -105,6 +104,8 @@ $ runipy train.ipynb
   * [Datasets from Kaggle](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)
 
 ### Conclusion
+
+![Compare Images](Image/compare.png)
 
 - I incresed accuracy as well as f1-scores than the paper original dataset mentioned in the acknowledgement.
 - Data preprocessing and TFIDF make machine learning classifiers more precise.
