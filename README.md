@@ -1,6 +1,9 @@
 # Fake News Classification using Traditional Machine Learning Models
 ![wordCloud](Image/word_cloud.png)
 
+### Contributors
+- Thura Aung
+
 ### Problem Statement  
 
 Fake news detection is still in the early age of development, and there are still many challenging issues that need further investigations. It is necessary to discuss potential research directions that can improve fake news detection and mitigation capabilities. Binary classification is done by using different machine learning algorithms.
@@ -110,5 +113,9 @@ $ runipy train.ipynb
 - I incresed accuracy as well as f1-scores than the paper original dataset mentioned in the acknowledgement.
 - Data preprocessing and TFIDF make machine learning classifiers more precise.
 - Decision Tree Classifier would be the best fit on the dataset.
+
+### Future works 
+
 - This repository is for Udacity Machine Learning Engineer Nanodegree and only to use educational purpose.
-- For the demonstration : [Fake News Classifiers by Aly Boolani](https://github.com/AlyBoolani/Fake-News-Classifier) on the same dataset I used. ( We used different preprocessing approaches )
+- Demonstration App : [Fake News Classifiers by Aly Boolani](https://github.com/AlyBoolani/Fake-News-Classifier) on the same dataset I used. ( We used different preprocessing approaches )
+- Fake news classification for Burmese language
