@@ -1,10 +1,19 @@
 # Fake News Classification using Traditional Machine Learning Models
+![wordCloud](Image/word_cloud.png)
 
 ### Problem Statement  
 
 Fake news detection is still in the early age of development, and there are still many challenging issues that need further investigations. It is necessary to discuss potential research directions that can improve fake news detection and mitigation capabilities. Binary classification is done by using different machine learning algorithms.
 
 ### Dataset 
+
+Dataset Link : https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset
+The dataset cites the following articles for acknowledgments: 
+• Ahmed H, Traore I, Saad S. “Detecting opinion spams and fake news using text classification”,  Journal of Security and Privacy, Volume 1, Issue 1, Wiley, January/February 2018. 
+• Ahmed H, Traore I, Saad S. (2017) “Detection of Online Fake News Using N-Gram Analysis and  Machine Learning Techniques. In: Traore I., Woungang I., Awad A. (eds) Intelligent, Secure, and  Dependable Systems in Distributed and Cloud Environments. ISDDC 2017. Lecture Notes in  Computer Science, vol 10618. Springer, Cham (pp. 127-138). 
+
+- True and Fake articles 
+![dataset ratio](Image/TFratio.png)
 
 * True.csv: A full dataset containing true news
   * title: the title of a news article
@@ -14,6 +23,18 @@ Fake news detection is still in the early age of development, and there are stil
   * target: label of the article - true or fake
 
 * Fake.csv: A full dataset with all the same attributes at True.csv but containing fake news
+
+### Data Preprocessing process
+  
+  * Concatenate True.csv and Fake.csv for data preparation
+  * Drop unnecesssary columns
+  * Convert to lower cases
+  * Remove punctuation
+  * Remove stopwords
+  * Tokenize
+  * Train/Test split with 80:20 ratio
+  * Vectorize
+  * Feature Extraction with Tfidf
 
 ### File Structure
 The file structure is the following
@@ -26,6 +47,7 @@ The file structure is the following
 |   +-- Fake.csv
 +-- modelling
 |   +-- [ML]fake-news-classification.ipynb
+|   +-- train.ipynb
 +-- demo
 |   +-- app.py
 |   +-- svm_model.pkl
@@ -36,19 +58,35 @@ The file structure is the following
 $ pip install -r requirements.txt
 ```
 
-### Train BHDD with Basic ConvNet Architecture with Dropout
+### Train Decision Tree Classifier on preprocessed Data
 
 ```{r, engine='bash', count_lines}
-$ runipy [ML]fake-news-classification.ipynb
+$ runipy train.ipynb
 ```
 ### For Demo Only
 
 ```{r, engine='bash', count_lines}
 $ streamlit run app.py
 ```
+### Confusion matrices of different classifiers
 
-- Confusion matrices after training with Different Classifiers
-![Confusion matrix Images](Image/matrix.png)
+- Confusion matrix of Naive Bayes
+![NB Confusion matrix Images](Image/nb.png)
+
+- Confusion matrix of Logistic Regreesion
+![LR Confusion matrix Images](Image/lr.png)
+
+- Confusion matrix of Decision Tree
+![DT Confusion matrix Images](Image/dt.png)
+
+- Confusion matrix of Random Forest
+![RF Confusion matrix Images](Image/rf.png)
+
+- Confusion matrix of Linear SVM
+![SVM Confusion matrix Images](Image/svm.png)
+
+- Confusion matrix of SVM with RBF kernel
+![RBF Confusion matrix Images](Image/rbf.png)
 
 
 ### Comparing Accuracies of Machine Learning Models
