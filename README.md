@@ -5,8 +5,8 @@
 
 Fake news detection is still in the early age of development, and there are still many challenging issues that need further investigations. It is necessary to discuss potential research directions that can improve fake news detection and mitigation capabilities. Binary classification is done by using different machine learning algorithms.
 
-[Project_proposal](Image/proposal.pdf)
-[Project_report](Image/report.pdf)
+* [Project proposal](Image/proposal.pdf)
+* [Project report](Image/report.pdf)
 
 ### Dataset 
 
