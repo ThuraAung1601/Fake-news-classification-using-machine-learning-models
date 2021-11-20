@@ -99,13 +99,6 @@ $ runipy train.ipynb
 | Linear SVM                | 99.65%       |
 | SVM with RBF kernel       | 99.52%       |
 
-### References
-
-  * [Fake News Identification - Stanford CS229](http://cs229.stanford.edu/proj2017/final-reports/5244348.pdf)
-  * [Machine Learning for Detection of Fake News](https://dspace.mit.edu/bitstream/handle/1721.1/119727/1078649610-MIT.pdf)
-  * [Fake News Classification](https://github.com/SauravMaheshkar/Fake-News-Classification)
-  * [Datasets from Kaggle](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)
-
 ### Conclusion
 
 ![Compare Images](Image/compare.png)
@@ -119,3 +112,10 @@ $ runipy train.ipynb
 - This repository is for Udacity Machine Learning Engineer Nanodegree and only to use educational purpose.
 - Demonstration App : [Fake News Classifiers by Aly Boolani](https://github.com/AlyBoolani/Fake-News-Classifier) on the same dataset I used. ( We used different preprocessing approaches )
 - Fake news classification for Burmese language
+
+### References
+
+  * [Fake News Identification - Stanford CS229](http://cs229.stanford.edu/proj2017/final-reports/5244348.pdf)
+  * [Machine Learning for Detection of Fake News](https://dspace.mit.edu/bitstream/handle/1721.1/119727/1078649610-MIT.pdf)
+  * [Fake News Classification](https://github.com/SauravMaheshkar/Fake-News-Classification)
+  * [Datasets from Kaggle](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)
