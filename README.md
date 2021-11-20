@@ -13,8 +13,8 @@ Fake news detection is still in the early age of development, and there are stil
 Dataset Link : https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset
 
 - The dataset cites the following articles for acknowledgments: 
- • Ahmed H, Traore I, Saad S. “Detecting opinion spams and fake news using text classification”,  Journal of Security and Privacy, Volume 1, Issue 1, Wiley, January/February 2018. 
- • Ahmed H, Traore I, Saad S. (2017) “Detection of Online Fake News Using N-Gram Analysis and  Machine Learning Techniques. In: Traore I., Woungang I., Awad A. (eds) Intelligent, Secure, and  Dependable Systems in Distributed and Cloud Environments. ISDDC 2017. Lecture Notes in  Computer Science, vol 10618. Springer, Cham (pp. 127-138). 
+ - Ahmed H, Traore I, Saad S. “Detecting opinion spams and fake news using text classification”,  Journal of Security and Privacy, Volume 1, Issue 1, Wiley, January/February 2018. 
+ - Ahmed H, Traore I, Saad S. (2017) “Detection of Online Fake News Using N-Gram Analysis and  Machine Learning Techniques. In: Traore I., Woungang I., Awad A. (eds) Intelligent, Secure, and  Dependable Systems in Distributed and Cloud Environments. ISDDC 2017. Lecture Notes in  Computer Science, vol 10618. Springer, Cham (pp. 127-138). 
 
 - True and Fake articles 
 ![dataset ratio](Image/TFratio.png)
@@ -72,6 +72,8 @@ $ runipy train.ipynb
 ```{r, engine='bash', count_lines}
 $ streamlit run app.py
 ```
+![Demo](Image/Demo.gif)
+
 ### Confusion matrices of different classifiers
 
 - Confusion matrix of Naive Bayes
