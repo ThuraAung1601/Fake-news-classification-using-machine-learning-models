@@ -46,10 +46,10 @@ The file structure is the following
 .
 |
 +-- requirements.txt
-+-- data
-|   +-- True.csv
-|   +-- Fake.csv
 +-- modelling
+|   +-- data
+    |   +-- True.csv
+    |   +-- Fake.csv
 |   +-- [ML]fake-news-classification.ipynb
 |   +-- train.ipynb
 ```
